@@ -38,13 +38,16 @@ function Header ()
                     <HeaderItem title='CONTACT' Icon={ChatAlt2Icon} />
                 </NavLink>
             </div>
-            <div className='hover:text-white cursor-pointer my-4'>
+            <div className='hover:text-white cursor-pointer my-2'>
                 {
                     user.email ?
-                        <button onClick={logOut} className='flex items-center text-lg text-black bg-white rounded-md hover:bg-gray-600 hover:text-white active:bg-blue-500 shadow-md px-2 py-1'>
-                            <LogoutIcon className='h-7 w-7 mr-1' />
-                            LogOut
-                        </button>
+                        <div className='flex flex-col lg:flex-row items-center justify-center'>
+                            <h1 className='text-xl font-thin mb-2 lg:mr-5'>{user.displayName}</h1>
+                            <button onClick={logOut} className='flex items-center text-lg text-black bg-white rounded-md hover:bg-gray-600 hover:text-white active:bg-blue-500 shadow-md px-2 py-1'>
+                                <LogoutIcon className='h-7 w-7 mr-1' />
+                                LogOut
+                            </button>
+                        </div>
                         :
                         <NavLink to={'/login'} className={'flex items-center justify-between'}>
                             <UserIcon className='h-7 mr-2' />

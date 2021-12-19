@@ -23,16 +23,16 @@ function Contact ()
 
     return (
         <section id="contact">
-            <div className="flex justify-center items-center px-5 py-10">
+            <div className="flex flex-col justify-center items-center px-5 py-10 wow animate__animated animate__fadeInUp">
+                <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font text-center">
+                    b4b Biz Club
+                </h2>
+                <p className="leading-relaxed text-center">
+                    Feel free to leave your message...
+                </p>
                 <form
                     onSubmit={sendEmail}
-                    className="lg:w-2/3 md:w-1/2 flex flex-col w-full md:px-8 md:py-8 mt-8 md:mt-0 border-2 rounded-lg wow animate__animated animate__fadeInUp">
-                    <h2 className="text-white sm:text-4xl text-3xl mb-1 font-medium title-font text-center">
-                        b4b Biz Club
-                    </h2>
-                    <p className="leading-relaxed mb-5 text-center">
-                        Feel free to leave your message...
-                    </p>
+                    className="lg:w-2/3 md:w-1/2 flex flex-col w-full md:px-8 md:py-8 mt-8 md:mt-0 border-2 rounded-lg p-2">
                     <div className="relative mb-4">
                         <label htmlFor="name" className="leading-7 text-sm text-gray-400">
                             Name

@@ -9,13 +9,13 @@ function Footer ()
         <footer>
             <section className='flex flex-col lg:flex-row items-center justify-around bg-gray-800'>
                 <nav>
-                    <img src={b4b} alt="b4b pad" width={300} height={200} />
+                    <img src={b4b} alt="b4b pad" width={300} height={200} className='border-2 rounded my-2' />
                 </nav>
                 <nav className='flex flex-col items-center justify-center'>
                     <span className='my-1 border-b-2 text-sm'>Links:</span>
                     <Link to="/home" className='my-1 hover:text-white'>Home</Link>
-                    <Link to="/home" className='hover:text-white'>Rules & Regulations</Link>
-                    <Link to="/home" className='my-1 hover:text-white'>Contact Us</Link>
+                    <Link to="/rules" className='hover:text-white'>Rules & Regulations</Link>
+                    <Link to="/contact" className='my-1 hover:text-white'>Contact Us</Link>
                 </nav>
                 <nav className='flex flex-col items-center'>
                     <span className='my-3 text-sm border-b-2'>Follow us on social networks:</span>
