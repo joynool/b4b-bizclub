@@ -3,6 +3,8 @@ import { ChevronLeftIcon, MenuIcon } from '@heroicons/react/outline';
 import useAuth from '../../../hooks/useAuth';
 import { LogoutIcon } from '@heroicons/react/outline';
 import { MdAccountBalance, MdAccountBox, MdMoney } from "react-icons/md";
+import { Outlet } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Dashboard ()
 {
@@ -17,17 +19,17 @@ function Dashboard ()
                     <LogoutIcon onClick={logOut} className='h-8 w-8 mr-1 hover:bg-white hover:text-black hover:rounded cursor-pointer' />
                     <ChevronLeftIcon onClick={() => setTrigger(false)} className='h-12 p-2 hover:bg-gray-500 rounded-md cursor-pointer lg:hidden' />
                 </div>
-                <ul className='mt-8 mx-2'>
+                <ul className='mt-8 mx-2 py-10 border-y-2'>
                     <li>
-                        <a href="/" className='px-4 py-2 text-xl hover:bg-gray-700 rounded-md flex items-center'>
+                        <Link to={"/dashboard/annual"} onClick={() => setTrigger(false)} className='px-4 py-2 text-xl hover:bg-gray-700 rounded-md flex items-center mb-5'>
                             <MdAccountBalance />&nbsp;&nbsp;Annual Statement
-                        </a>
-                        <a href="/" className='px-4 py-2 text-xl hover:bg-gray-700 rounded-md flex items-center'>
+                        </Link>
+                        <Link to={"/dashboard/individual"} onClick={() => setTrigger(false)} className='px-4 py-2 text-xl hover:bg-gray-700 rounded-md flex items-center mb-5'>
                             <MdAccountBox />&nbsp;&nbsp;Individual Statement
-                        </a>
-                        <a href="/" className='px-4 py-2 text-xl hover:bg-gray-700 rounded-md flex items-center'>
+                        </Link>
+                        <Link to={"/dashboard/deposit"} onClick={() => setTrigger(false)} className='px-4 py-2 text-xl hover:bg-gray-700 rounded-md flex items-center'>
                             <MdMoney />&nbsp;&nbsp;Deposit Biz Club
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </nav>
@@ -41,7 +43,7 @@ function Dashboard ()
                     </div>
                 </header>
                 <section className='m-5'>
-                    <h1>Hello from the other side</h1>
+                    <Outlet />
                 </section>
             </div>
         </div>

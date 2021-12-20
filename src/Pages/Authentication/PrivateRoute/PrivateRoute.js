@@ -9,7 +9,7 @@ function PrivateRoute ({ children })
     let location = useLocation();
     if (isLoading) {
         return <div className='flex items-center justify-center'>
-            <StarIcon className='animate-spin h-10 w-10 text-white' />
+            <StarIcon className='animate-spin h-10 w-10 text-white m-10' />
         </div>
     }
     if (user.email) {
