@@ -1,3 +1,6 @@
+/*--------------------------------------------------- 
+            Rules Reusable Components
+-----------------------------------------------------*/
 function RulesItem ({ num, handleRules })
 {
     return (

@@ -6,6 +6,9 @@ import { MdAccountBalance, MdAccountBox, MdMoney } from "react-icons/md";
 import { Outlet } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
+/*--------------------------------------------------- 
+    Dashboard panel with Private Route functionality
+-----------------------------------------------------*/
 function Dashboard ()
 {
     const [trigger, setTrigger] = useState(false);

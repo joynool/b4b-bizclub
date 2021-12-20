@@ -14,6 +14,9 @@ const imageData = [
     { image: four, cap1: 'With this objective in mind, the organization started', cap2: 'its journey on 21st February 2020 called b4b Biz Club' }
 ];
 
+/*--------------------------------------------------- 
+            Implement Banner Carousel using react
+-----------------------------------------------------*/
 function Banner ()
 {
     const [current, setCurrent] = useState(0);

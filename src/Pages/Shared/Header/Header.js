@@ -13,6 +13,9 @@ import
 import { NavLink } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
+/*--------------------------------------------------- 
+    Simple header with navigation and functionality
+-----------------------------------------------------*/
 function Header ()
 {
     const { user, logOut } = useAuth();

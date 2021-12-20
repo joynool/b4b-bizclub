@@ -2,6 +2,9 @@ import React from 'react'
 import { ResponsiveContainer, PieChart, Pie } from 'recharts';
 import AnnualItem from '../../../components/AnnualItem';
 
+/*--------------------------------------------------- 
+            Implement Annual Statement using rechart
+-----------------------------------------------------*/
 const data = [
     { name: 'Group A', value: 120 },
     { name: 'Group B', value: 180 },

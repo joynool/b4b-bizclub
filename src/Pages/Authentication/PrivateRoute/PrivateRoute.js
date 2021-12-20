@@ -3,6 +3,9 @@ import { Navigate, useLocation } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import { StarIcon } from '@heroicons/react/outline';
 
+/*--------------------------------------------------- 
+            Private Route for protect components
+-----------------------------------------------------*/
 function PrivateRoute ({ children })
 {
     const { user, isLoading } = useAuth();

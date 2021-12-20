@@ -11,6 +11,9 @@ function Committee ()
             .then(data => setCommittees(data));
     }, [])
 
+    /*--------------------------------------------------- 
+                Committee member list
+    -----------------------------------------------------*/
     return (
         <section>
             <h1 className='flex items-center justify-center lg:text-3xl font-medium text-white mb-10 wow animate__animated animate__fadeInDown'>

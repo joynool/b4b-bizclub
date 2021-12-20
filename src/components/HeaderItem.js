@@ -1,3 +1,6 @@
+/*--------------------------------------------------- 
+            Header Reusable Components
+-----------------------------------------------------*/
 function HeaderItem ({ Icon, title })
 {
     return (

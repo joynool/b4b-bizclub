@@ -24,6 +24,9 @@ function Login ()
         setAuthError('');
     };
 
+    /*--------------------------------------------------- 
+            Login page for authentication
+    -----------------------------------------------------*/
     return (
         <div className='lg:w-2/3 flex flex-col items-center justify-center mx-auto border-2 rounded-lg my-5 wow animate__animated animate__zoomIn'>
             <img src={b4b} alt="b4b logo" width={600} height={600} />

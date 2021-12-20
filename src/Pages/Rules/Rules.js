@@ -23,6 +23,9 @@ function Rules ()
         console.log(clickedRules)
     }
 
+    /*--------------------------------------------------- 
+                Rules and regulation display components
+    -----------------------------------------------------*/
     return (
         <div className='w-2/3 mx-auto'>
             <section className='flex items-center justify-center mt-5 wow animate__animated animate__fadeInUp'>

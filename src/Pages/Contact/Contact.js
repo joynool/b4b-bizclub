@@ -2,6 +2,9 @@ import React from 'react'
 import emailjs from 'emailjs-com';
 import Swal from 'sweetalert2';
 
+/*--------------------------------------------------- 
+            Implement Contact us form
+-----------------------------------------------------*/
 function Contact ()
 {
     function sendEmail (e)

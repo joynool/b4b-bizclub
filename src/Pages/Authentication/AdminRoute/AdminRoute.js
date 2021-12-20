@@ -3,6 +3,9 @@ import { Navigate, useLocation } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 import { StarIcon } from '@heroicons/react/outline';
 
+/*--------------------------------------------------- 
+            Implement Admin Route for future update
+-----------------------------------------------------*/
 function AdminRoute ({ children })
 {
     const { user, admin, isLoading } = useAuth();

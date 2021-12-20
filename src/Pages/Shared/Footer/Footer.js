@@ -3,6 +3,9 @@ import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { Link } from 'react-router-dom';
 import b4b from '../../../images/login.png';
 
+/*--------------------------------------------------- 
+            Simple footer with navigation
+-----------------------------------------------------*/
 function Footer ()
 {
     return (

@@ -53,6 +53,9 @@ const data = [
     }
 ];
 
+/*--------------------------------------------------- 
+        Implement Individual statement using rechart
+-----------------------------------------------------*/
 function Individual ()
 {
     const [activeIndex, setActiveIndex] = useState(0);

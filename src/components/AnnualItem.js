@@ -1,5 +1,8 @@
 import { CheckCircleIcon } from '@heroicons/react/solid'
 
+/*--------------------------------------------------- 
+            Annual Reusable Components
+-----------------------------------------------------*/
 function AnnualItem ({ name, deposit })
 {
     return (
